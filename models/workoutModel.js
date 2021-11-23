@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/workout", {
+mongoose.connect(process.env.mongo || "mongodb://localhost/workout", {
   useNewUrlParser: true,
 });
 
@@ -7,7 +7,7 @@ const workoutSchema = new mongoose.Schema({
   day: Date,
   exercises: [
     {
-      resistancetype: String,
+      type: String,
       name: String,
       duration: Number,
       weight: Number,
