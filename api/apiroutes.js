@@ -27,10 +27,15 @@ router.get("/api/workouts", function (req, res) {
 //   });
 
 router.post("/api/workouts", function (req, res) {
-  workoutModel.create({ day: new Date() }).then((data) => {
-    console.log(data);
-    res.json(data);
-  });
+  workoutModel
+    .create({ day: new Date() })
+    .then((data) => {
+      console.log(data);
+      res.json(data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
 
 router.put("/api/workouts/:id", (req, res) => {
