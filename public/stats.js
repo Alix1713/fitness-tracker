@@ -22,10 +22,8 @@ function generatePalette() {
 }
 
 function populateChart(data) {
-  console.log(data);
   let durations = data.map(({ totalDuration }) => totalDuration);
   let pounds = calculateTotalWeight(data);
-  console.log(pounds);
   let workouts = workoutNames(data);
   const colors = generatePalette();
 
@@ -179,7 +177,6 @@ function calculateTotalWeight(data) {
   let totals = [];
 
   data.forEach((workout) => {
-    console.log(workout);
     const workoutTotal = workout.exercises.reduce((total, { type, weight }) => {
       console.log(total, type, weight);
       if (type === "resistance") {
