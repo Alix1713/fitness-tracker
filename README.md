@@ -1,9 +1,13 @@
 ## Fitness Tracker
-This is a fitness tracker app to help you count those steps as you herd cats!
+This is a fitness tracker app to help you keep track of different workouts.
 
 ## Getting Started
+This project has been deployed on heroku using mongo db atlas. The models I created to track the workouts follow a
+Mongoose schema. It takes the data input by the user and creates a workout then populates it into a chart for easy
+viewing. With my api routes I used an aggregate sum function to total the workout duration.
 
-Add a workout, get off your laptop and start walking!
+
+
 
 # Adding a unique id to each note
 ![Code Snippet](snip.png)
@@ -15,17 +19,14 @@ Add a workout, get off your laptop and start walking!
 
 ## Built With
 
-* [HTML](https://www.w3schools.com/html/html_intro.asp)
-* [CSS](https://css-tricks.com/snippets/css/complete-guide-grid/)
-* [UC Berkeley Extension Program](https://extension.berkeley.edu/)
+* [Mongo DB Atlas](https://www.mongodb.com/atlas/database)
+* [Aggregate Sum](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/)
+* [Mongo Schema Query](https://docs.mongodb.com/manual/tutorial/query-documents/)
 * [NPM package](https://www.npmjs.com/package/uuid)
+* [Routes using express](https://expressjs.com/en/guide/routing.html)
 
 ## Alix Friedman
 
 * [My GitHub](https://www.github.com/Alix1713)
 * [My LinkedIn](https://www.linkedin.com/in/alix1713)
 
-
-## Acknowledgments
-
-*My TA Manuel for helping me figure out why it was working locally but not when deployed.
