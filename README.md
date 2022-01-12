@@ -9,7 +9,7 @@ viewing. With my api routes I used an aggregate sum function to total the workou
 
 
 
-# Adding a unique id to each note
+# Workout Model Route
 ![Code Snippet](snip.png)
 
 
